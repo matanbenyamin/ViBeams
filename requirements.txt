@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 Pillow
-streamlit-lotly-events
+streamlit-plotly-events
 plotly
 opencv-python
