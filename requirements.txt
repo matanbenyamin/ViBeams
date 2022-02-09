@@ -1,7 +1,7 @@
 streamlit
 pandas
 numpy
-PIL
+Pillow
 streamlit-lotly-events
 plotly
 opencv-python
