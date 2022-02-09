@@ -4,4 +4,7 @@ numpy
 Pillow
 streamlit-plotly-events
 plotly
-opencv-python
+opencv-python-headless
+
+
+
