@@ -50,7 +50,7 @@ if uploaded_file is not None:
     786,801,812,825,840,
     726,738,751,766,779,
     656,667,685,697,710]
-    df = pd.DataFrame(index = freqs, data = [[spectrum],columns=['current'])
+    df = pd.DataFrame(index = freqs, data = [[spectrum]],columns=['current'])
     df = df.sort_index()
 
     df_p = pd.DataFrame(index=freqs, data=[[spectrum_p]], columns=['previous'])
