@@ -6,8 +6,6 @@ from streamlit_plotly_events import plotly_events
 import numpy as np
 from PIL import Image
 
-st.set_page_config(layout="wide")
-
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
