@@ -40,7 +40,7 @@ def power(image, kernel, normalized = True):
 
 
 reg = xgb.XGBRegressor()
-reg.load_model('.\model.bin')
+reg.load_model('model.bin')
 
 cons = ['10','5','2_5','1_25', '063','0']
 con = cons[np.random.randint(len(cons))]
