@@ -2,3 +2,4 @@ dependencies:
   - xgboost
   - scikit-image
   - scipy
+  - -opencv-python
