@@ -1,4 +1,4 @@
 dependencies:
   - xgboost
   - scikit-image
-  - -scipy
+  - scipy
