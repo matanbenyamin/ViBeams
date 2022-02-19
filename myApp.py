@@ -7,7 +7,10 @@ import numpy as np
 from PIL import Image
 
 
-uploaded_file = st.file_uploader("Choose a file")
+
+col1, col2, col3, col4 = st.columns((2,1,1,1))
+
+uploaded_file =  st.sidebar.file_uploader(label='Upload a file', type=['bmp', 'png', 'jpg'])
 if uploaded_file is not None:
     im = np.array(Image.open(uploaded_file))
     # path = "C:\\Users\lab7\Downloads\ ".strip()
@@ -15,10 +18,8 @@ if uploaded_file is not None:
     # im = cv2.imread(path + im_name)
     im = im[0::5,0::5]
 
-
-
-
-    fig = px.imshow(im,  color_continuous_scale='gray')
+    with col1:
+        fig = px.imshow(im,  color_continuous_scale='gray')
     # fig.data[0].update(mode = 'marker')
     # st.plotly_chart(fig)
 
@@ -78,7 +79,8 @@ if uploaded_file is not None:
         df = df.join(df_p)
 
         # plot
-        fig2 = px.line(df, title='Spectrum')
+        with col2:
+            fig2 = px.line(df, title='Spectrum')
         curr_state
         if curr_state>0:
             fig2.data[0].line.color = "red"
