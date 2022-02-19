@@ -3,3 +3,6 @@ dependencies:
   - scikit-image
   - scipy
   - opencv
+  - plotly
+  - pandas
+  - pillow
