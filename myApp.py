@@ -1,6 +1,7 @@
-import cv2
 import streamlit as st
+
 import plotly.express as px
+import cv2
 import pandas as pd
 from streamlit_plotly_events import plotly_events
 import numpy as np

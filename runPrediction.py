@@ -48,7 +48,6 @@ path = '/content/drive/MyDrive/Lab_Experiments/17Feb2022 - Michael Lab/' + con +
 print(path)
 filename = str(np.random.randint(8)).zfill(4) + '.bmp'
 
-
 img_file = st.sidebar.file_uploader(label='Upload a file', type=['bmp'])
 im = np.array(ImageOps.grayscale(Image.open(img_file)))
 

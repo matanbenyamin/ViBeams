@@ -5,6 +5,6 @@ Pillow
 streamlit-plotly-events
 plotly
 opencv-python-headless
-
+pip install pyTelegramBotAPI
 
 
